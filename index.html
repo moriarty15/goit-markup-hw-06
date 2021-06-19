@@ -25,7 +25,9 @@
                     <span>Wed</span>Studio
                 </a>
                 <ul class="side-nav list">
-                    <li class="item"> <a href="" class="current">Студия</a> </li>
+                    <li class="item current"> <a href="" class="current">
+                            Студия
+                        </a> </li>
                     <li class="item"><a href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a href="">Контакты</a></li>
                 </ul>
@@ -55,7 +57,7 @@
         <section class="hero-section">
             <!--разметка первой секции-->
             <h1>Эффективные решения для вашего бизнеса</h1>
-            <button class="button">Заказать услугу</button>
+            <button class="button" data-modal-open>Заказать услугу</button>
         </section>
         <section class="half">
             <!--разметка второй секции-->
@@ -106,9 +108,16 @@
             <div class="container">
                 <h2 class="second-font">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="item"><img src="./images/1.jpg" alt="разметка страницы" width="370"></li>
-                    <li class="item"><img src="./images/2.jpg" alt="оптимизация под телефон" width="370"></li>
-                    <li class="item"><img src="./images/3.jpg" alt="оптимизация под iPAD" width="370"></li>
+                    <li class="item">
+                        <img src="./images/1.jpg" alt="разметка страницы" width="370">
+                        <p class="job-title">Десктопные приложения</p>
+                    </li>
+                    <li class="item"><img src="./images/2.jpg" alt="оптимизация под телефон" width="370">
+                        <p class="job-title">Мобильные приложения</p>
+                    </li>
+                    <li class="item"><img src="./images/3.jpg" alt="оптимизация под iPAD" width="370">
+                        <p class="job-title">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -373,6 +382,24 @@
         </div>
 
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="chrest" data-modal-close>
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                        fill="black" />
+                </svg>
+
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
