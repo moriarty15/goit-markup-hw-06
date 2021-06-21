@@ -379,12 +379,74 @@
                     </li>
                 </ul>
             </div>
+            <form action="">
+                <div class="container-sub">
+                    <label for="" class="pod">
+                        <h2 class=textpod>Подпишитесь на рассылку</h2>
+                        <div class="butknop">
+                            <input type="emale" name="mail" class="mail" placeholder="E-mail">
+                            <button type="submit" class="butpod">
+                                <p>Подписаться</p>
+                                <svg class="send" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </label>
+
+                </div>
+            </form>
         </div>
 
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h2 class="hmodal">Оставьте свои данные, мы вам перезвоним</h2>
+            <form action="" name="service" class="js-speaker-form">
+                <label for="" class="name">
+                    <p>Имя</p>
+                    <div class="rel-name">
+                        <input type="text" name="name" class="window">
+                        <svg class="center-icon">
+                            <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="name">
+                    <p>Телефон</p>
+                    <div class="rel-tel">
+                        <input type="tel" name="telephone" class="window">
+                        <svg class=center-icon>
+                            <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="name">
+                    <p>Почта</p>
+                    <div class="rel-send">
+                        <input type="email" name="mail" class="window">
+                        <svg class=center-icon>
+                            <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label for="" class="name">
+                    <p>Комментарий</p>
+                    <textarea type="text" name="comment" class="comment" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="language" value="python">
+                    Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+                <label for="" class="butmodal-lab">
+                    <button type="submit" class="butmodal">Отправить</button>
+                </label>
+
+
+
+
+            </form>
             <button class="chrest" data-modal-close>
                 <svg width="11" height="11">
                     <use href="./images/symbol-defs.svg#icon-vector"></use>
@@ -394,6 +456,16 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <script>(() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+            });
+        })();</script>
 
 </body>
 
