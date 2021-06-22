@@ -379,22 +379,19 @@
                     </li>
                 </ul>
             </div>
-            <form action="">
-                <div class="container-sub">
-                    <label for="" class="pod">
-                        <h2 class=textpod>Подпишитесь на рассылку</h2>
-                        <div class="butknop">
-                            <input type="emale" name="mail" class="mail" placeholder="E-mail">
-                            <button type="submit" class="butpod">
-                                <p>Подписаться</p>
-                                <svg class="send" width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </label>
-
-                </div>
+            <form action="" class="container-sub">
+                <label for="" class="pod">
+                    <h2 class=textpod>Подпишитесь на рассылку</h2>
+                    <div class="butknop">
+                        <input type="emale" name="mail" class="mail" placeholder="E-mail">
+                        <button type="submit" class="butpod">
+                            <p>Подписаться</p>
+                            <svg class="send" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </label>
             </form>
         </div>
 
@@ -406,7 +403,7 @@
             <form action="" name="service" class="js-speaker-form">
                 <label for="" class="windows">
                     <p>Имя</p>
-                    <div class="rel-name">
+                    <div class="rel">
                         <input type="text" name="name" class="window">
                         <svg class="center-icon">
                             <use href="./images/symbol-defs.svg#icon-person-black"></use>
@@ -415,7 +412,7 @@
                 </label>
                 <label for="" class="windows">
                     <p>Телефон</p>
-                    <div class="rel-tel">
+                    <div class="rel">
                         <input type="tel" name="telephone" class="window">
                         <svg class=center-icon>
                             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
@@ -424,7 +421,7 @@
                 </label>
                 <label for="" class="windows">
                     <p>Почта</p>
-                    <div class="rel-send">
+                    <div class="rel">
                         <input type="email" name="mail" class="window">
                         <svg class=center-icon>
                             <use href="./images/symbol-defs.svg#icon-email-black"></use>
@@ -432,24 +429,24 @@
                     </div>
                 </label>
                 <label for="" class="windows">
-                    <p>Комментарий</p>
-                    <textarea type="text" name="comment" class="comment" placeholder="Введите текст"></textarea>
+                    <div class="rel">
+                        <p>Комментарий</p>
+                        <textarea type="text" name="comment" class="comment" placeholder="Введите текст"></textarea>
+                    </div>
                 </label>
                 <label class="check">
-                    <input type="checkbox" name="language" value="python" class="checkbox">
-                    <span class="galk"></span>
+                    <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">
+                    <svg class="galk">
+                        <use href="./images/symbol-defs.svg#icon-galochka"></use>
+                    </svg>
                     <p>Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></p>
                 </label>
                 <label for="" class="butmodal-lab">
                     <button type="submit" class="butmodal">Отправить</button>
                 </label>
-
-
-
-
             </form>
             <button class="chrest" data-modal-close>
-                <svg width="11" height="11">
+                <svg width="11" height="11" class="chrest-ico">
                     <use href="./images/symbol-defs.svg#icon-vector"></use>
                 </svg>
             </button>
