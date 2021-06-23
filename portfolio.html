@@ -255,7 +255,7 @@
                 </address>
             </div>
             <div class=container-foot>
-                <h2 class="edit">присоединяйтесь</h2>
+                <span class="edit">присоединяйтесь</span>
                 <ul class="teamka-footer">
                     <li class="container-team">
                         <a class="communic foot" href="">
@@ -287,19 +287,18 @@
                     </li>
                 </ul>
             </div>
-            <form action="" class="container-sub">
-                <label for="" class="pod">
-                    <h2 class=textpod>Подпишитесь на рассылку</h2>
-                    <div class="butknop">
-                        <input type="emale" name="mail" class="mail" placeholder="E-mail">
-                        <button type="submit" class="butpod">
-                            <p>Подписаться</p>
-                            <svg class="send" width="24" height="24">
-                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </label>
+            <form class="container-sub">
+                <label class="pod" for="user_mail"></label>
+                <span class=textpod>Подпишитесь на рассылку</span>
+                <div class="butknop">
+                    <input type="email" name="mail" class="mail" id="user_mail" placeholder="E-mail">
+                    <button type="submit" class="butpod">
+                        <span>Подписаться</span>
+                        <svg class="send" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>
 

@@ -262,7 +262,8 @@ body {
   text-align: center;
   margin-bottom: 12px;
 }
-.windows p {
+.windows span {
+  display: block;
   margin: 0;
   margin-bottom: 4px;
   font-size: 12px;
@@ -324,7 +325,7 @@ input {
   align-items: center;
   margin-bottom: 30px;
 }
-.check p a {
+.check span a {
   color: var(--accent-color);
 }
 .galk {
@@ -652,16 +653,19 @@ input {
   display: flex;
 }
 .container-sub {
-  display: flex;
   align-self: baseline;
-  position: relative;
 }
 .mail {
   display: block;
-  margin: 0;
-  margin-top: 20px;
   background-color: inherit;
   border-radius: 4px;
+
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .textpod {
@@ -671,19 +675,7 @@ input {
   color: var(--second-text-color);
   text-transform: uppercase;
   font-weight: 700;
-}
-.pod input {
-  width: 358px;
-  height: 50px;
-  margin: 0;
-  margin-right: 12px;
-  padding: 15px 16px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.butknop {
-  display: flex;
+  line-height: 1.143;
 }
 .butpod {
   position: relative;
@@ -701,11 +693,12 @@ input {
   padding: 0;
   cursor: pointer;
 }
-.butpod p {
-  margin: 0;
-  display: inline-block;
+.butpod span {
   padding-left: 29px;
   padding-right: 62px;
+}
+.butknop {
+  display: flex;
 }
 .send {
   fill: var(--second-text-color);
@@ -715,9 +708,12 @@ input {
   transform: translateY(-50%);
 }
 .edit {
+  display: block;
   color: var(--second-text-color);
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.143;
 }
 .communic.foot {
   fill: var(--second-text-color);
