@@ -402,8 +402,8 @@
         <div class="modal">
             <h2 class="hmodal">Оставьте свои данные, мы вам перезвоним</h2>
             <form name="service" class="js-speaker-form">
-                <label class="windows" for="user_name"></label>
-                <span>Имя</span>
+                <label class="windows" for="user_name"><span>Имя</span>
+                </label>
                 <div class="rel">
                     <input type="text" name="name" class="window" id="user_name">
                     <svg class="center-icon">
@@ -411,8 +411,8 @@
                     </svg>
                 </div>
 
-                <label class="windows" for="tel"></label>
-                <span>Телефон</span>
+                <label class="windows" for="tel"><span>Телефон</span>
+                </label>
                 <div class="rel">
                     <input type="tel" name="telephone" class="window" id="tel">
                     <svg class=center-icon>
@@ -420,8 +420,8 @@
                     </svg>
                 </div>
 
-                <label class="windows" for="user_mail_modal"></label>
-                <span>Почта</span>
+                <label class="windows" for="user_mail_modal"><span>Почта</span>
+                </label>
                 <div class="rel">
                     <input type="email" name="mail" class="window" id="user_mail_modal">
                     <svg class=center-icon>
@@ -429,10 +429,9 @@
                     </svg>
                 </div>
 
-                <label class="windows"></label>
-                <span>Комментарий</span>
-                <div class="rel">
-                    <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>
+                <label class="windows" for="comment"><span>Комментарий</span></label>
+                <div class="rel commy">
+                    <textarea id="comment" name="comment" class="comment" placeholder="Введите текст"></textarea>
                 </div>
                 <label class="check">
                     <input type="checkbox" name="checkbox" value="checkbox" class="checkbox">
